@@ -1,5 +1,5 @@
 #Creating a function and calling it
-"""def favorite_book(title):
+def favorite_book(title):
     print(f"My favorite book is,{title}!")
 
 favorite_book("Alice in borderland")
@@ -20,7 +20,7 @@ def make_album(name,title,number_of_songs=None):
 album_1 = make_album('sam','love')
 album_2 = make_album('Adele','Dark',number_of_songs=20)
 print(album_1)
-print(album_2)"""
+print(album_2)
 
 def make_album(album_artist,album_title,number_of_songs=None):
     musician_discography=f"{'album_artist':album_artist,'album_title':album_title}"
