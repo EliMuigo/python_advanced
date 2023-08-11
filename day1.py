@@ -207,7 +207,7 @@ for dimensions in dimensions:
 #DICTIONARIES-collection of key-value pairs
 alien={'color':'green','points':5}
 print(alien['color'])
-print(alien['points'])"""
+print(alien['points'])
 
 #accessing values in a dictionary
 alien_o={'color':'green','points':5}
@@ -215,7 +215,25 @@ new_points=alien_o['points']
 print(f"You just earned {new_points} points!")
 
 #adding new key-value pairs
+alien_o={'color':'green','points':5}
+alien_o['x_position']=0
+alien_o['y_position']=25
+print(alien_o)
 
+#starting with an empty dictionary
+alien_o={}
+alien_o['color']='green'
+alien_o['points']=5
+print(alien_o)
+
+#modifying values in a dictionary
+alien_o={'color':'green'}
+print(f"\nThe alien is {alien_o['color']}")
+
+alien_o['color']='yellow'
+print(f"The alien is now {alien_o['color']}")"""
+Dict={"A":1,"B":"2","C":[3,3,3],"D":(4,4,4),'E':5,'F':6}
+Dict["D"]
 
 
 
