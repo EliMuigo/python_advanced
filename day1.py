@@ -231,13 +231,116 @@ alien_o={'color':'green'}
 print(f"\nThe alien is {alien_o['color']}")
 
 alien_o['color']='yellow'
-print(f"The alien is now {alien_o['color']}")"""
-Dict={"A":1,"B":"2","C":[3,3,3],"D":(4,4,4),'E':5,'F':6}
-Dict["D"]
+print(f"The alien is now {alien_o['color']}")
+#A dictionary of similar objects
+favorite_language={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'phil':'python'
+}
+language=favorite_language['Sarah'].title()
+print(f"Sarah's favorite language is {language}")
+
+#Using get() to access values.The get method requires a key as a first argument
+alien_0={'color':'green','speed':'slow'}
+point_value=alien_0.get('points','No point value assigned')
+print(point_value)
+
+# looping through a dictionary
+user_o={
+    'Username':'Ofemi',
+    'First':'Enrico',
+    'Last':'Fermi'
+}
+for key,value in user_o.items():#includes name of the dictionary followed by the method items which returns a key value pairs.
+    print(f"\nKey:{key}")
+    print(f"Value:{value}")
 
 
+favorite_languge={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'phil':'python'
+}
+for name,language in favorite_languge.items():
+    print(f"{name.title()}'s favorite language is {language.title()}")
+
+#looping through keys
+favorite_languge={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'phil':'python'
+}
+for name in favorite_languge.keys():
+    print(f"{name.title()}")
+
+#deleting entries from a key
+favorite_languge={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'Phil':'python'
+}
+removed_value=favorite_languge.pop('Sarah')
+print(favorite_languge)
+
+#looping through dictionary's keys in a particular order
+favorite_languge={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'Phil':'python'
+}
+for name in sorted(favorite_languge.keys()):
+    print(f"{name.title()}, Thank you for participating")
 
 
+#looping through all values in a dictionary
+favorite_languge={
+    'Jen':'Python',
+    'Sarah':'c',
+    'Edward':'ruby',
+    'Phil':'python'
+}
+print("The following languages have been mentioned:")
+for language in favorite_languge.values():
+    print(language.title())
+
+rental_car=input("which car do you want? ")
+print(f"Let me see if I can find you a {rental_car.title()}")
+ 
+restaurant_booking=input("How many people are in the dinner group? ")
+restaurant_booking=int(restaurant_booking)
+if restaurant_booking > 8:
+    print("They'll have to wait")
+else:
+    print("Their table is ready")
+
+multiples_of_ten=input("Enter a number: ")
+multiples_of_ten=int(multiples_of_ten)
+if multiples_of_ten % 10 == 0:
+    print(f"The number {multiples_of_ten} is a multiple of ten")
+else:
+    print(f"The number {multiples_of_ten} is not a multiple of ten")
+
+prompt="tell us your first name for a personalized message: "
+prompt += "\n What's your first name: "
+name=""
+while name != 'quit':
+    name=input(prompt)
+    print(name)
+
+prompt="\nPlease enter the name of a city you have visited: "
+prompt+="\n(Enter 'quit' when you're finished)."
+while True:
+    city=input(prompt)
+    if city=="quit":
+        break
+    else:
+        print(f"I'd love to go to {city.title()}")"""
 
 
 
