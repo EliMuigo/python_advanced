@@ -340,7 +340,51 @@ while True:
     if city=="quit":
         break
     else:
-        print(f"I'd love to go to {city.title()}")"""
+        print(f"I'd love to go to {city.title()}")
+
+while True:
+    age = input("Please enter your age (or 'quit' to exit): ")
+
+    if age.lower() == 'quit':
+        break
+
+    age = int(age)
+
+    if age < 3:
+        ticket_price = 0
+    elif age >= 3 and age <= 12:
+        ticket_price = 10
+    else:
+        ticket_price = 15
+
+    print(f"The cost of your movie ticket is ${ticket_price})
+
+toppings = []
+
+while True:
+    topping = input("Enter a pizza topping (or 'quit' to finish): ")
+
+    if topping.lower() == 'quit':
+        break
+
+    toppings.append(topping)
+    print(f"Adding {topping} to your pizza.")
+
+print("Your pizza with the following toppings is ready:")
+for topping in toppings:
+    print("- " + topping)"""
+
+#moving items from one list to another
+unconfirmed_users=['Alice','Brian','Ken']
+confirmed_users=[]
+while unconfirmed_users:
+    current_user=unconfirmed_users.pop()
+    print(f"Verifying user: {current_user}")
+    confirmed_users.append(current_user)
+#display all confirmed users
+print("\nThe following users have beeen confirmed: ")
+for confirmed_users in confirmed_users:
+    print(confirmed_users)
 
 
 
