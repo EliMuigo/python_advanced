@@ -108,7 +108,7 @@ musician_2=make_album("Avicii","Nights")
 musician_3=make_album("Kinoti","Greeen Room",number_of_songs=5)
 print(musician_1)
 print(musician_2)
-print(musician_3)"""
+print(musician_3)
 
 def make_album(artist_name,album_title,songs=None):
     artist={'name':artist_name,
@@ -131,8 +131,53 @@ while True:
         break
     musician_discography=make_album(name_artist,album_name,songs_number)
     print(f"The artist's discography is {musician_discography}")
-    
 
-   
+def print_models(unprinted_designs,completed_models):
+    while unprinted_designs:
+        current_designs=unprinted_designs.pop()
+        print(f"Printing models: {current_designs}")
+        completed_models.append(current_designs)
+
+def show_completed_models(completed_models):
+    print("\nThe following models have been printed:")
+    for completed_model in completed_models:
+        print(completed_model)
+
+unprinted_designs=['phones','pendants','watch']
+completed_models=[]
+
+print_models(unprinted_designs,completed_models)
+show_completed_models(completed_models)
+
+
+def show_messages(messages):
+    for text in messages:
+        print(text)
+
+messages=['\nHeyy how are you'
+          '\nHow are you doing'
+          '\nIts been so long']
+show_messages(messages)"""
+
+
+def show_messages(messages,sent_messages):
+    while messages:
+        current_messages=messages.pop()
+        print(f"The following are the current messages: {current_messages}")
+        sent_messages.append(current_messages)
+
+def send_messages(sent_messages):
+    
+    print("\nThe following are the sent messages: ")
+    for text in sent_messages:
+        print(text)
+
+messages=['\nHeyy how are you'
+          '\nHow are you doing'
+          '\nIts been so long']
+sent_messages=[]
+
+show_messages(messages,sent_messages)
+send_messages(sent_messages)
 
 
