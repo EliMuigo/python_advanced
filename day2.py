@@ -1,5 +1,5 @@
 #creating functions
-"""def display_message(functions):
+def display_message(functions):
     print(f"We're learning about {functions.title()}")
 display_message("functions")
 
@@ -157,7 +157,7 @@ def show_messages(messages):
 messages=['\nHeyy how are you'
           '\nHow are you doing'
           '\nIts been so long']
-show_messages(messages)"""
+show_messages(messages)
 
 
 def show_messages(messages,sent_messages):

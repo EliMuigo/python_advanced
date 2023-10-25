@@ -1,5 +1,5 @@
 #027
-"""number = float(input("Enter a number with lots of decimals:"))
+number = float(input("Enter a number with lots of decimals:"))
 number = number*number
 print(round(number,2))
 import math
@@ -372,7 +372,7 @@ while True:
 
 print("Your pizza with the following toppings is ready:")
 for topping in toppings:
-    print("- " + topping)"""
+    print("- " + topping)
 
 #moving items from one list to another
 unconfirmed_users=['Alice','Brian','Ken']
